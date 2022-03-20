@@ -1,0 +1,555 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+abbr {
+    text-decoration: none;
+}
+
+/***Colors***/
+$white:#fff;
+$lightgreen:rgb(230, 250, 192);
+$black:#000000;
+$green:rgb(35, 97, 35);
+
+/***Fonts***/
+$mainFont:'Questrial';
+
+/***Discover Our Special Cleanse Kit**/
+.cleanse_kit {
+    width: 100%;
+    height: 300vh;
+    margin-top: 11vh;
+    background-color: $lightgreen;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    padding: 110px 0 30px;
+
+    @media only screen and (max-width:285px) {
+        height: auto;
+        padding-top: 50px;
+        padding-bottom: 0;
+    }
+
+    @media only screen and (min-width:285px) {
+        height: auto;
+        margin-top: 10px;
+        gap: 20px 0;
+    }
+
+    @media only screen and (min-width:500px) {
+        padding-top: 65px;
+    }
+
+    @media only screen and (min-width:800px) {
+        margin-top: 20vh;
+    }
+
+    &_navigation {
+        position: fixed;
+        top: 11vh;
+        width: 100%;
+        height: 80px;
+        background-color: $lightgreen;
+        border-bottom: 1.5px solid #cccccc;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-inline: 150px;
+        z-index: 90;
+
+        @media only screen and (max-width:285px) {
+            top: calc(11vh + 50px);
+            padding: 0;
+            overflow: auto;
+            position: static;
+        }
+
+        @media only screen and (min-width:285px) {
+            position: static;
+            overflow: auto;
+            padding-inline: 25px;
+        }
+
+        @media only screen and (min-width:550px) {
+            padding-inline: 45px;
+        }
+
+        @media only screen and (min-width:600px) {
+            padding-inline: 65px;
+        }
+
+        @media only screen and (min-width:900px) {
+            padding-inline: 100px;
+        }
+
+        @media only screen and (min-width:800px) {
+            position: fixed;
+        }
+
+        &_menu {
+            width: 200px;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            @media only screen and (max-width:285px) {
+                display: none;
+            }
+
+            p {
+                font-family: $mainFont;
+                font-weight: 200;
+                font-size: 20px;
+                color: #888888;
+            }
+
+            img {
+                width: 35px;
+                cursor: pointer;
+            }
+        }
+
+        &_links {
+            width: auto;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            position: relative;
+
+            a {
+                width: 100px;
+                height: 100%;
+                margin-inline: 20px;
+
+                &:nth-child(2) {
+                    width: 180px;
+                }
+
+                &:nth-child(4) {
+                    width: 130px;
+                }
+
+                button {
+                    width: 100%;
+                    height: 100%;
+                    background-color: transparent;
+                    border: none;
+                    outline: none;
+                    cursor: pointer;
+                    color: #888888;
+                    font-size: 18px;
+                    font-family: $mainFont;
+
+                    @media only screen and (max-width:285px) {
+                        color: #5e5d5d;
+                    }
+                }
+            }
+
+            img {
+                width: 25px;
+                cursor: pointer;
+
+                @media only screen and (max-width:285px) {
+                    display: none;
+                }
+            }
+
+            .line {
+                position: absolute;
+                bottom: 0px;
+                left: 0px;
+                width: 220px;
+                height: 2px;
+                background-color: rgba(75, 180, 75, .5);
+
+                @media only screen and (max-width:285px) {
+                    display: none;
+                }
+
+                @media only screen and (min-width:285px) {
+                    display: none;
+                }
+
+                @media only screen and (min-width:1000px) {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    &_content {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+
+        @media only screen and (max-width:285px) {
+            margin-top: 40px;
+        }
+
+        @media only screen and (min-width:285px) {
+            height: auto;
+        }
+
+        @media only screen and (min-width:570px) {
+            gap: 60px 0;
+        }
+
+        .kit {
+            width: 1200px !important;
+            height: 440px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+            @media only screen and (max-width:285px) {
+                width: 100% !important;
+                gap: 12px 0;
+                height: auto;
+            }
+
+            @media only screen and (min-width:285px) {
+                width: 100% !important;
+                justify-content: center;
+                height: auto;
+            }
+
+            @media only screen and (min-width:570px) {
+                justify-content: space-between;
+            }
+
+            @media only screen and (min-width:600px) {
+                width: 85% !important;
+            }
+
+            &_inner {
+                width: 550px;
+                height: 200px;
+                background-color: transparent;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                border: 2px solid #cccccc;
+                cursor: pointer;
+
+                @media only screen and (max-width:285px) {
+                    border-left: none;
+                    border-right: none;
+                    border-top: none;
+                    padding-inline: 10px;
+                }
+
+                @media only screen and (min-width:285px) {
+                    width: 95%;
+                    border-left: none;
+                    border-right: none;
+                    border-top: none;
+                    margin-bottom: 10px;
+                }
+
+                @media only screen and (min-width:570px) {
+                    width: 285px;
+                }
+
+                @media only screen and (min-width:600px) {
+                    width: 47%;
+                }
+
+                @media only screen and (min-width:600px) {
+                    border: 2px solid #cccccc;
+                }
+
+                &_img {
+                    width: 40%;
+                    height: 100%;
+
+                    @media only screen and (max-width:285px) {
+                        width: 25%;
+                        display: flex;
+                        align-items: center;
+                    }
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+
+                        @media only screen and (max-width:285px) {
+                            height: 40%
+                        }
+                    }
+                }
+
+                &_text {
+                    width: 60%;
+                    height: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: flex-start;
+                    flex-direction: column;
+                    padding: 10px;
+
+
+                    @media only screen and (max-width:285px) {
+                        width: 75%;
+                        padding: 33px 0px;
+                    }
+
+                    p {
+                        position: relative;
+                        width: 100%;
+                        font-family: $mainFont;
+                        font-size: 17px;
+
+                        @media only screen and (max-width:285px) {
+                            font-size: 14px;
+                            width: 90%;
+                        }
+
+                        &:first-child {
+                            &::after {
+                                content: 'I’m a dish description. Click “Edit Menu” to open the Restaurant Menu editor and change my text.';
+                                position: absolute;
+                                left: 0;
+                                bottom: -40px;
+                                width: 100%;
+                                height: 100%;
+
+                                @media only screen and (max-width:285px) {
+                                    bottom: -30px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            /**Hover effects on each product**/
+            .one,
+            .two,
+            .three,
+            .four,
+            .five,
+            .six,
+            .seven,
+            .eight,
+            .nine,
+            .ten,
+            .eleven,
+            .twelve {
+                &:hover {
+                    .kit_inner_text {
+                        border: none;
+                    }
+
+                    background-image: linear-gradient(rgba(0, 0, 0, 0.055), rgba(0, 0, 0, 0.055));
+                    border: 1.5px solid $black;
+                }
+            }
+        }
+    }
+}
+
+/**Footer**/
+
+/**Colors**/
+$footerColor:rgb(57, 75, 42);
+
+footer {
+    width: 100%;
+    height: 460px !important;
+    background-color: $footerColor;
+    display: flex;
+    justify-content: flex-end !important;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+
+    .footer {
+        width: 100%;
+        height: 100%;
+        background-color: $footerColor;
+        padding-inline: 150px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @media only screen and (max-width:1020px) {
+            padding-inline: 120px;
+        }
+
+        @media only screen and (max-width:930px) {
+            padding-inline: 80px;
+        }
+
+        @media only screen and (max-width:850px) {
+            padding-inline: 30px;
+        }
+
+        @media only screen and (max-width:715px) {
+            flex-wrap: wrap;
+            justify-content: space-around;
+            height: 450px;
+            gap: 35px 0;
+            align-items: flex-start;
+        }
+
+        @media only screen and (max-width:505px) {
+            padding-inline: 0;
+        }
+
+        @media only screen and (max-width:500px) {
+            justify-content: space-between;
+            padding-inline: 10px;
+        }
+
+        .title h1 {
+            margin-bottom: 23px;
+            font-size: 28px;
+            color: $white;
+            font-family: $mainFont;
+            text-transform: capitalize;
+            font-weight: normal;
+
+            @media only screen and (max-width:325px) {
+                font-size: 25px;
+            }
+        }
+
+        a {
+            text-decoration: none;
+            color: $white;
+            font-family: sans-serif;
+            font-weight: 300;
+            font-size: 20px;
+            margin: 7px 0;
+
+            @media only screen and (max-width:325px) {
+                font-size: 17px;
+            }
+        }
+
+        .get_started {
+            width: 265px;
+            height: 90%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            flex-direction: column;
+
+            @media only screen and (max-width:715px) {
+                height: auto;
+            }
+
+            @media only screen and (max-width:500px) {
+                width: auto;
+            }
+        }
+
+        .connect {
+            width: 175px;
+            height: 90%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            flex-direction: column;
+
+            @media only screen and (max-width:715px) {
+                height: auto;
+            }
+
+            @media only screen and (max-width:500px) {
+                width: auto;
+            }
+        }
+
+        .join {
+            width: 400px;
+            height: 90%;
+
+            @media only screen and (max-width:715px) {
+                height: auto;
+            }
+
+            .form {
+                display: inline-block;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+
+                .email {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                    flex-direction: column;
+                    gap: 10px 0;
+
+                    label {
+                        color: $white;
+                        font-size: 18px;
+                        font-family: $mainFont;
+                        font-weight: normal;
+                    }
+
+                    input {
+                        background-color: transparent;
+                        border: none;
+                        border-bottom: 2px solid orange;
+                        outline: none;
+                        color: $white;
+                        font-size: 18px;
+
+                        @media only screen and (max-width:770px) {
+                            width: 150px;
+                        }
+                    }
+                }
+
+                button {
+                    width: 150px;
+                    height: 60px;
+                    border: 2px solid $white;
+                    color: $white;
+                    background-color: transparent;
+                    outline: none;
+                    font-family: $mainFont;
+                    font-size: 20px;
+                    cursor: pointer;
+
+                    @media only screen and (max-width:770px) {
+                        width: 105px;
+                        height: 50px;
+                    }
+
+                    @media only screen and (max-width:325px) {
+                        width: 90px;
+                        height: 40px;
+                        font-size: 18px;
+                    }
+
+                    &:hover {
+                        background-color: $white;
+                        color: $black;
+                        transition: .5s ease-in-out;
+                    }
+                }
+            }
+        }
+    }
+}

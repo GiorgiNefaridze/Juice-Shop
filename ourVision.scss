@@ -1,0 +1,275 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/***Colors***/
+$white:#fff;
+$lightgreen:rgb(230, 250, 192);
+$black:#000000;
+$green:rgb(35, 97, 35);
+
+/***Fonts***/
+$mainFont:'Questrial';
+
+/***Wellbeing***/
+.Wellbeing_container {
+    width: 100%;
+    height: 80vh;
+    margin-top: 11vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media only screen and (max-width:525px) {
+        height: 95vh;
+    }
+
+    @media only screen and (max-width:420px) {
+        height: 100vh;
+    }
+
+    @media only screen and (max-width:400px) {
+        height: 110vh;
+    }
+
+    @media only screen and (max-width:365px) {
+        height: 120vh;
+    }
+
+    @media only screen and (max-width:340px) {
+        height: 130vh;
+    }
+
+    @media only screen and (max-width:310px) {
+        height: 140vh;
+    }
+
+    &_inner {
+        width: 980px;
+        height: 500px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+
+        @media only screen and (max-width:270px) {
+            height: 700px;
+        }
+
+        h1 {
+            font-size: 60px;
+            font-family: $mainFont;
+
+            @media only screen and (max-width:760px) {
+                font-size: 50px;
+            }
+
+            @media only screen and (max-width:760px) {
+                font-size: 45px;
+            }
+
+            @media only screen and (max-width:515px) {
+                font-size: 40px;
+                text-align: center;
+            }
+
+            @media only screen and (max-width:460px) {
+                font-size: 35px;
+            }
+
+            @media only screen and (max-width:310px) {
+                font-size: 30px;
+            }
+        }
+
+        &_paragraph_container {
+            width: 80%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            p {
+                margin: 20px 0;
+                text-align: center;
+                letter-spacing: .5px;
+                font-size: 16.5px;
+                font-family: sans-serif;
+                font-weight: normal;
+                color: #666663;
+                line-height: 25px;
+
+                @media only screen and (max-width:760px) {
+                    font-size: 15px;
+                }
+
+                @media only screen and (max-width:370px) {
+                    font-sizE: 13px;
+                }
+            }
+        }
+    }
+}
+
+/***Our Vision**/
+.our_vision_img {
+    width: 100%;
+    height: 100vh;
+    background-image: url("./Screenshot\ \(348\).png");
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+/***Farm to Bottle in Less Than a Day**/
+.farm_container {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    &_inner {
+        width: 90%;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 50px 0;
+
+        @media only screen and (max-width:300px) {
+            height: 100%;
+        }
+
+        h1 {
+            font-family: $mainFont;
+            font-size: 60px;
+
+            @media only screen and (max-width:1005px) {
+                font-size: 50px;
+            }
+
+            @media only screen and (max-width:840px) {
+                font-size: 40px;
+            }
+
+            @media only screen and (max-width:665px) {
+                font-size: 36px;
+            }
+
+            @media only screen and (max-width:600px) {
+                font-size: 33px;
+                text-align: center;
+                line-height: 50px;
+            }
+        }
+
+        p {
+            width: 80%;
+            font-size: 19px;
+            font-family: sans-serif;
+            font-weight: 500;
+            color: #666663;
+            line-height: 25px;
+            text-align: center;
+            letter-spacing: .5px;
+
+            @media only screen and (max-width:1005px) {
+                font-size: 22px;
+            }
+
+            @media only screen and (max-width:840px) {
+                font-size: 20px;
+                width: 100%;
+            }
+
+            @media only screen and (max-width:665px) {
+                font-size: 17px;
+            }
+
+            @media only screen and (max-width:600px) {
+                font-size: 15px;
+                line-height: 20px;
+            }
+        }
+    }
+}
+
+/***Vision images***/
+.vision_img {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 10px;
+
+    @media only screen and (max-width:1065px) {
+        flex-wrap: wrap;
+        padding-inline: 135px;
+        height: 150vh;
+    }
+
+    @media only screen and (max-width:800px) {
+        padding-inline: 50px;
+    }
+
+    @media only screen and (max-width:620px) {
+        padding-inline: 10px;
+    }
+
+    @media only screen and (max-width:445px) {
+        padding-inline: 10px;
+    }
+
+    @media only screen and (max-width:405px) {
+        padding-inline: 17px;
+        height: 90vh;
+    }
+
+    img {
+        width: 255px;
+        height: 80%;
+
+        @media only screena and (max-width:1150px) {
+            width: 240px;
+        }
+
+        @media only screen and (max-width:1065px) {
+            height: 350px;
+        }
+
+        @media only screen and (max-width:620px) {
+            width: 210px;
+        }
+
+        @media only screen and (max-width:445px) {
+            width: 180px;
+            height: 300px;
+        }
+
+        @media only screen and (max-width:405px) {
+            width: 150px;
+            height: 250px;
+        }
+
+        @media only screen and (max-width:400px) {
+            width: 110px;
+            height: 190px;
+        }
+
+        &:nth-child(2) {
+            align-self: flex-end;
+        }
+
+        &:last-child {
+            align-self: flex-end;
+        }
+    }
+}

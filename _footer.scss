@@ -1,0 +1,214 @@
+/**Colors**/
+$footerColor:rgb(57, 75, 42);
+
+footer {
+    width: 100%;
+    height: 760px;
+    background-color: $footerColor;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+
+    .follow_us {
+        width: 100%;
+        height: 300px;
+        background-color: $white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        h1 {
+            font-family: $mainFont;
+            font-size: 60px;
+            font-weight: normal;
+            letter-spacing: 1.5px;
+            text-transform: capitalize;
+
+            @media only screen and (max-width:440px) {
+                font-size: 50px;
+            }
+
+            @media only screen and (max-width:315px) {
+                font-size: 40px;
+            }
+
+            @media only screen and (max-width:280px) {
+                font-size: 34px;
+            }
+        }
+    }
+
+    .footer {
+        width: 100%;
+        height: calc(1000px - 300px - 350px);
+        background-color: $footerColor;
+        padding-inline: 150px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @media only screen and (max-width:1020px) {
+            padding-inline: 120px;
+        }
+
+        @media only screen and (max-width:930px) {
+            padding-inline: 80px;
+        }
+
+        @media only screen and (max-width:850px) {
+            padding-inline: 30px;
+        }
+
+        @media only screen and (max-width:715px) {
+            flex-wrap: wrap;
+            height: 450px;
+            gap: 35px 0;
+            align-items: flex-start;
+        }
+
+        @media only screen and (max-width:505px) {
+            padding-inline: 0;
+        }
+
+        @media only screen and (max-width:500px) {
+            justify-content: space-between;
+            padding-inline: 10px;
+        }
+
+        .title h1 {
+            margin-bottom: 23px;
+            font-size: 28px;
+            color: $white;
+            font-family: $mainFont;
+            text-transform: capitalize;
+            font-weight: normal;
+
+            @media only screen and (max-width:325px) {
+                font-size: 25px;
+            }
+        }
+
+        a {
+            text-decoration: none;
+            color: $white;
+            font-family: sans-serif;
+            font-weight: 300;
+            font-size: 20px;
+            margin: 7px 0;
+
+            @media only screen and (max-width:325px) {
+                font-size: 17px;
+            }
+        }
+
+        .get_started {
+            width: 265px;
+            height: 90%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            flex-direction: column;
+
+            @media only screen and (max-width:715px) {
+                height: auto;
+            }
+
+            @media only screen and (max-width:500px) {
+                width: auto;
+            }
+        }
+
+        .connect {
+            width: 175px;
+            height: 90%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            flex-direction: column;
+
+            @media only screen and (max-width:715px) {
+                height: auto;
+            }
+
+            @media only screen and (max-width:500px) {
+                width: auto;
+            }
+        }
+
+        .join {
+            width: 400px;
+            height: 90%;
+
+            @media only screen and (max-width:715px) {
+                height: auto;
+            }
+
+            .form {
+                display: inline-block;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+
+                .email {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                    flex-direction: column;
+                    gap: 10px 0;
+
+                    label {
+                        color: $white;
+                        font-size: 18px;
+                        font-family: $mainFont;
+                        font-weight: normal;
+                    }
+
+                    input {
+                        background-color: transparent;
+                        border: none;
+                        border-bottom: 2px solid orange;
+                        outline: none;
+                        color: $white;
+                        font-size: 18px;
+
+                        @media only screen and (max-width:770px) {
+                            width: 150px;
+                        }
+                    }
+                }
+
+                button {
+                    width: 150px;
+                    height: 60px;
+                    border: 2px solid $white;
+                    color: $white;
+                    background-color: transparent;
+                    outline: none;
+                    font-family: $mainFont;
+                    font-size: 20px;
+                    cursor: pointer;
+
+                    @media only screen and (max-width:770px) {
+                        width: 105px;
+                        height: 50px;
+                    }
+
+                    @media only screen and (max-width:325px) {
+                        width: 90px;
+                        height: 40px;
+                        font-size: 18px;
+                    }
+
+                    &:hover {
+                        background-color: $white;
+                        color: $black;
+                        transition: .5s ease-in-out;
+                    }
+                }
+            }
+        }
+    }
+}

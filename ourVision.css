@@ -1,0 +1,386 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/***Colors***/
+/***Fonts***/
+/***Wellbeing***/
+.Wellbeing_container {
+  width: 100%;
+  height: 80vh;
+  margin-top: 11vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media only screen and (max-width: 525px) {
+  .Wellbeing_container {
+    height: 95vh;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .Wellbeing_container {
+    height: 100vh;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .Wellbeing_container {
+    height: 110vh;
+  }
+}
+
+@media only screen and (max-width: 365px) {
+  .Wellbeing_container {
+    height: 120vh;
+  }
+}
+
+@media only screen and (max-width: 340px) {
+  .Wellbeing_container {
+    height: 130vh;
+  }
+}
+
+@media only screen and (max-width: 310px) {
+  .Wellbeing_container {
+    height: 140vh;
+  }
+}
+
+.Wellbeing_container_inner {
+  width: 980px;
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media only screen and (max-width: 270px) {
+  .Wellbeing_container_inner {
+    height: 700px;
+  }
+}
+
+.Wellbeing_container_inner h1 {
+  font-size: 60px;
+  font-family: "Questrial";
+}
+
+@media only screen and (max-width: 760px) {
+  .Wellbeing_container_inner h1 {
+    font-size: 50px;
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  .Wellbeing_container_inner h1 {
+    font-size: 45px;
+  }
+}
+
+@media only screen and (max-width: 515px) {
+  .Wellbeing_container_inner h1 {
+    font-size: 40px;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  .Wellbeing_container_inner h1 {
+    font-size: 35px;
+  }
+}
+
+@media only screen and (max-width: 310px) {
+  .Wellbeing_container_inner h1 {
+    font-size: 30px;
+  }
+}
+
+.Wellbeing_container_inner_paragraph_container {
+  width: 80%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.Wellbeing_container_inner_paragraph_container p {
+  margin: 20px 0;
+  text-align: center;
+  letter-spacing: .5px;
+  font-size: 16.5px;
+  font-family: sans-serif;
+  font-weight: normal;
+  color: #666663;
+  line-height: 25px;
+}
+
+@media only screen and (max-width: 760px) {
+  .Wellbeing_container_inner_paragraph_container p {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  .Wellbeing_container_inner_paragraph_container p {
+    font-sizE: 13px;
+  }
+}
+
+/***Our Vision**/
+.our_vision_img {
+  width: 100%;
+  height: 100vh;
+  background-image: url("./Screenshot (348).png");
+  background-repeat: no-repeat;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+/***Farm to Bottle in Less Than a Day**/
+.farm_container {
+  width: 100%;
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.farm_container_inner {
+  width: 90%;
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 50px 0;
+}
+
+@media only screen and (max-width: 300px) {
+  .farm_container_inner {
+    height: 100%;
+  }
+}
+
+.farm_container_inner h1 {
+  font-family: "Questrial";
+  font-size: 60px;
+}
+
+@media only screen and (max-width: 1005px) {
+  .farm_container_inner h1 {
+    font-size: 50px;
+  }
+}
+
+@media only screen and (max-width: 840px) {
+  .farm_container_inner h1 {
+    font-size: 40px;
+  }
+}
+
+@media only screen and (max-width: 665px) {
+  .farm_container_inner h1 {
+    font-size: 36px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .farm_container_inner h1 {
+    font-size: 33px;
+    text-align: center;
+    line-height: 50px;
+  }
+}
+
+.farm_container_inner p {
+  width: 80%;
+  font-size: 19px;
+  font-family: sans-serif;
+  font-weight: 500;
+  color: #666663;
+  line-height: 25px;
+  text-align: center;
+  letter-spacing: .5px;
+}
+
+@media only screen and (max-width: 1005px) {
+  .farm_container_inner p {
+    font-size: 22px;
+  }
+}
+
+@media only screen and (max-width: 840px) {
+  .farm_container_inner p {
+    font-size: 20px;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 665px) {
+  .farm_container_inner p {
+    font-size: 17px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .farm_container_inner p {
+    font-size: 15px;
+    line-height: 20px;
+  }
+}
+
+/***Vision images***/
+.vision_img {
+  width: 100%;
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-inline: 10px;
+}
+
+@media only screen and (max-width: 1065px) {
+  .vision_img {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding-inline: 135px;
+    height: 150vh;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .vision_img {
+    padding-inline: 50px;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  .vision_img {
+    padding-inline: 10px;
+  }
+}
+
+@media only screen and (max-width: 445px) {
+  .vision_img {
+    padding-inline: 10px;
+  }
+}
+
+@media only screen and (max-width: 405px) {
+  .vision_img {
+    padding-inline: 17px;
+    height: 90vh;
+  }
+}
+
+.vision_img img {
+  width: 255px;
+  height: 80%;
+}
+
+@media only screena and (max-width: 1150px) {
+  .vision_img img {
+    width: 240px;
+  }
+}
+
+@media only screen and (max-width: 1065px) {
+  .vision_img img {
+    height: 350px;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  .vision_img img {
+    width: 210px;
+  }
+}
+
+@media only screen and (max-width: 445px) {
+  .vision_img img {
+    width: 180px;
+    height: 300px;
+  }
+}
+
+@media only screen and (max-width: 405px) {
+  .vision_img img {
+    width: 150px;
+    height: 250px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .vision_img img {
+    width: 110px;
+    height: 190px;
+  }
+}
+
+.vision_img img:nth-child(2) {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.vision_img img:last-child {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+/*# sourceMappingURL=ourVision.css.map */
